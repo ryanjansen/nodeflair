@@ -1,0 +1,182 @@
+/* RESET */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* UTILITIES */
+
+.u-margin-top-small {
+  margin-top: 4px;
+}
+
+/* TYPOGRAPHY */
+
+.card__company {
+  font-size: 14px;
+  color: #3a3a3a;
+}
+
+.card__job-title {
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.card__time-posted {
+  font-size: 14px;
+  color: #838383;
+  font-style: italic;
+}
+
+/* LAYOUT */
+
+body {
+  background-color: #f3f2ef;
+}
+
+.container {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  padding: 1rem;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(228, 228, 228);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0rem 2px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.top-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-row {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.card__image {
+  height: 150px;
+  width: 150px;
+  align-self: center;
+}
+
+.card__category {
+  font-size: 14px;
+  padding: 5px 8px;
+  display: inline-block;
+  width: max-content;
+  background-color: #ddf7e9;
+  color: #3fcf7f;
+  border-radius: 3px;
+  font-weight: 700;
+  text-align: right;
+  margin-left: auto;
+}
+
+.card__keyword-holder {
+  border-top: 1px solid rgb(202, 202, 202);
+  padding-top: 15px;
+}
+
+.card__keyword {
+  padding: 5px 8px;
+  background-color: #f1f1ff;
+  color: #979797;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-row {
+    flex-direction: row;
+  }
+
+  .bottom-row {
+    margin-top: 8px;
+  }
+
+  .card__image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card__job-info {
+    margin-left: 10px;
+  }
+
+  .card__job-title {
+    font-size: 14px;
+  }
+}
