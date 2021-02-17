@@ -1,7 +1,4 @@
-# nodeflair
-Repo for the NodeFlair Assesment 
-
-## How to use
+# How to use
 
 This repo is split into two folders. 
 
@@ -10,6 +7,6 @@ This repo is split into two folders.
 "React" is for the simple image picker react app. To start the app, follow the following steps:
 
 1. Clone the directory
-2. Run """npm install"""
-3. Run """npm start"""
+2. Run `npm install`
+3. Run `npm start`
 
